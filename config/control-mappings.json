@@ -1,0 +1,25 @@
+{
+  "mappings": [
+    {
+      "source_id": "S3.1",
+      "control_ref": "aws.s3.public_access",
+      "framework_refs": ["ISO27001-A.8.3", "CIS-AWS-2.1.4"],
+      "rationale": "The Security Hub control evaluates S3 Block Public Access configuration.",
+      "remediation": "Prepare a reviewed account and bucket public-access change; validate intended public workloads before deployment."
+    },
+    {
+      "source_id": "s3-bucket-server-side-encryption-enabled",
+      "control_ref": "aws.s3.encryption_at_rest",
+      "framework_refs": ["ISO27001-A.8.24", "CIS-AWS-2.1.1"],
+      "rationale": "AWS Config evaluates whether the bucket has default server-side encryption enabled.",
+      "remediation": "Prepare an IaC encryption change with an approved KMS ownership and recovery model."
+    },
+    {
+      "source_id": "CKV_AWS_18",
+      "control_ref": "aws.s3.access_logging",
+      "framework_refs": ["ISO27001-A.8.15", "CIS-AWS-3.6"],
+      "rationale": "The static check evaluates whether S3 access logging is represented in IaC.",
+      "remediation": "Update the reviewed Terraform module and verify log delivery after deployment."
+    }
+  ]
+}

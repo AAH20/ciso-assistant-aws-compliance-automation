@@ -1,0 +1,35 @@
+{
+  "observations": [
+    {
+      "attributes": {
+        "finding_id": "arn:aws:securityhub:us-east-1:111122223333:subscription/aws-foundational-security-best-practices/v/1.0.0/S3.1/finding/example-active",
+        "resource_type": "AwsS3Bucket",
+        "severity": "HIGH"
+      },
+      "digest": "24195bdb8a9a1ade4a93eba08e6277ba43e7b44381baf2c334813ecaf6348aca",
+      "normalized_status": "fail",
+      "observed_at": "2026-09-05T10:00:00Z",
+      "raw_status": "FAILED",
+      "scope": "arn:aws:s3:::synthetic-public-bucket",
+      "source_id": "S3.1",
+      "source_kind": "aws-security-hub",
+      "title": "S3 Block Public Access should be enabled"
+    },
+    {
+      "attributes": {
+        "finding_id": "arn:aws:securityhub:us-east-1:111122223333:subscription/aws-foundational-security-best-practices/v/1.0.0/S3.1/finding/example-pass",
+        "resource_type": "AwsS3Bucket",
+        "severity": "INFORMATIONAL"
+      },
+      "digest": "cab6e91fbc3ce6961d6ab917e38be63de8c4c686b6b10cfbbd3b09feb0c3b608",
+      "normalized_status": "pass",
+      "observed_at": "2026-09-05T10:00:00Z",
+      "raw_status": "PASSED",
+      "scope": "arn:aws:s3:::synthetic-private-bucket",
+      "source_id": "S3.1",
+      "source_kind": "aws-security-hub",
+      "title": "S3 Block Public Access should be enabled"
+    }
+  ],
+  "schema_version": "1.0"
+}

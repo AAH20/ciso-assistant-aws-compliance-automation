@@ -1,0 +1,18 @@
+{
+  "observations": [
+    {
+      "attributes": {
+        "resource_type": "AWS::S3::Bucket"
+      },
+      "digest": "4a8462acedc968769cf2b423c4c9c4ad052152735be0d538c89376a410093a33",
+      "normalized_status": "fail",
+      "observed_at": "2026-09-05T10:00:00Z",
+      "raw_status": "NON_COMPLIANT",
+      "scope": "synthetic-unencrypted-bucket",
+      "source_id": "s3-bucket-server-side-encryption-enabled",
+      "source_kind": "aws-config",
+      "title": "AWS Config evaluation"
+    }
+  ],
+  "schema_version": "1.0"
+}

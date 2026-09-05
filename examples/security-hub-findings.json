@@ -1,0 +1,22 @@
+{
+  "Findings": [
+    {
+      "Id": "arn:aws:securityhub:us-east-1:111122223333:subscription/aws-foundational-security-best-practices/v/1.0.0/S3.1/finding/example-active",
+      "ProductFields": {"StandardsControlArn": "S3.1"},
+      "Resources": [{"Type": "AwsS3Bucket", "Id": "arn:aws:s3:::synthetic-public-bucket"}],
+      "Compliance": {"Status": "FAILED", "SecurityControlId": "S3.1"},
+      "Severity": {"Label": "HIGH"},
+      "UpdatedAt": "2026-09-05T10:00:00Z",
+      "Title": "S3 Block Public Access should be enabled"
+    },
+    {
+      "Id": "arn:aws:securityhub:us-east-1:111122223333:subscription/aws-foundational-security-best-practices/v/1.0.0/S3.1/finding/example-pass",
+      "ProductFields": {"StandardsControlArn": "S3.1"},
+      "Resources": [{"Type": "AwsS3Bucket", "Id": "arn:aws:s3:::synthetic-private-bucket"}],
+      "Compliance": {"Status": "PASSED", "SecurityControlId": "S3.1"},
+      "Severity": {"Label": "INFORMATIONAL"},
+      "UpdatedAt": "2026-09-05T10:00:00Z",
+      "Title": "S3 Block Public Access should be enabled"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "dry_run_default": true,
+  "operations": [
+    {
+      "idempotency_key": "7279e04f37da3fb055f21af3658af6a65779f88e2bff818e1cebcc3ef231af89",
+      "operation": "upsert_control_evidence",
+      "payload": {
+        "control_ref": "aws.s3.encryption_at_rest",
+        "evidence": [
+          {
+            "attributes": {
+              "resource_type": "AWS::S3::Bucket"
+            },
+            "digest": "4a8462acedc968769cf2b423c4c9c4ad052152735be0d538c89376a410093a33",
+            "normalized_status": "fail",
+            "observed_at": "2026-09-05T10:00:00Z",
+            "raw_status": "NON_COMPLIANT",
+            "scope": "synthetic-unencrypted-bucket",
+            "source_id": "s3-bucket-server-side-encryption-enabled",
+            "source_kind": "aws-config",
+            "title": "AWS Config evaluation"
+          }
+        ],
+        "framework_refs": [
+          "ISO27001-A.8.24",
+          "CIS-AWS-2.1.1"
+        ],
+        "rationale": "AWS Config evaluates whether the bucket has default server-side encryption enabled.",
+        "remediation": "Prepare an IaC encryption change with an approved KMS ownership and recovery model.",
+        "status": "not_satisfied"
+      },
+      "review_required": true
+    }
+  ],
+  "schema_version": "1.0"
+}

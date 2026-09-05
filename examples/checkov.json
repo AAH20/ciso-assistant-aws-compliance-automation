@@ -1,0 +1,14 @@
+{
+  "results": {
+    "failed_checks": [
+      {
+        "check_id": "CKV_AWS_18",
+        "check_name": "Ensure S3 bucket access logging is enabled",
+        "resource": "aws_s3_bucket.example",
+        "file_path": "/modules/s3/main.tf",
+        "file_line_range": [4, 22]
+      }
+    ],
+    "passed_checks": []
+  }
+}

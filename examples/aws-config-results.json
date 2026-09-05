@@ -1,0 +1,16 @@
+{
+  "EvaluationResults": [
+    {
+      "EvaluationResultIdentifier": {
+        "EvaluationResultQualifier": {
+          "ConfigRuleName": "s3-bucket-server-side-encryption-enabled",
+          "ResourceType": "AWS::S3::Bucket",
+          "ResourceId": "synthetic-unencrypted-bucket"
+        },
+        "OrderingTimestamp": "2026-09-05T10:00:00Z"
+      },
+      "ComplianceType": "NON_COMPLIANT",
+      "ResultRecordedTime": "2026-09-05T10:00:01Z"
+    }
+  ]
+}
